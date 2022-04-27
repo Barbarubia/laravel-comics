@@ -4,7 +4,7 @@
 
 @section('content')
     <h1>Comics</h1>
-    <div class="comics-container">
+    <div class="container cards-container">
         @foreach ($comics as $comic)
             <div class="comic-card">
                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">

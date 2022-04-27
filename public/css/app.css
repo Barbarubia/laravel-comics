@@ -56,7 +56,8 @@ html {
 .header-bottom .container .menu ul li {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: calc(5rem - 5px);
+  border-bottom: 5px solid transparent;
 }
 .header-bottom .container .menu ul li a {
   text-transform: uppercase;
@@ -65,8 +66,27 @@ html {
   color: #555758;
 }
 .header-bottom .container .menu ul li.active {
-  border-bottom: 3px solid #0282f9;
+  border-bottom: 5px solid #0282f9;
 }
 .header-bottom .container .menu ul li.active a {
   color: #0282f9;
+}
+
+.jumbotron {
+  background-image: url(../images/jumbotron.jpg);
+  background-size: cover;
+  height: 20rem;
+}
+
+main {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-container .comic-card {
+  width: 16.6666666667%;
 }

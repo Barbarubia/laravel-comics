@@ -17,7 +17,7 @@
         <div class="container">
             <div class="logo">
                 <a href="{{ route('home') }}">
-                    <img src="./images/dc-logo.png" alt="Logo">
+                    <img src="{{ asset('images/dc-logo.png') }}" alt="Logo">
                 </a>
             </div>
             <div class="menu">
