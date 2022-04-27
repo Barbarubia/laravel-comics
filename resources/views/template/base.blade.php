@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titolo dinamico -->
+    <title>Laravel Comics - @yield('title')</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+
+    <!-- Header uguale per tutte le routes del sito -->
+    @include('partials.header')
+
+    <!-- Contenuto dinamico in base alla route in cui mi trovo-->
+    @yield('content')
+
+    <!-- Footer uguale per tutte le routes del sito -->
+    @include('partials.footer')
+
+</body>
+</html>
