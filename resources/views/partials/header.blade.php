@@ -18,7 +18,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#">
-                    <img src="" alt="Logo">
+                    <img src="./images/dc-logo.png" alt="Logo">
                 </a>
             </div>
             <div class="menu">
