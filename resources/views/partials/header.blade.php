@@ -1,5 +1,4 @@
 <header>
-    Questo è l'header.
 
     <div class="header-top">
         <div class="container">
@@ -23,34 +22,34 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'characters' ? 'active' : '' }}">
                         <a href="{{ route('characters') }}">Characters</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'comics' ? 'active' : '' }}">
                         <a href="{{ route('comics') }}">Comics</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'movies' ? 'active' : '' }}">
                         <a href="{{ route('movies') }}">Movies</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'tv' ? 'active' : '' }}">
                         <a href="{{ route('tv') }}">TV</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'games' ? 'active' : '' }}">
                         <a href="{{ route('games') }}">Games</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'collectibles' ? 'active' : '' }}">
                         <a href="{{ route('collectibles') }}">Collectibles</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'videos' ? 'active' : '' }}">
                         <a href="{{ route('videos') }}">Videos</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'fans' ? 'active' : '' }}">
                         <a href="{{ route('fans') }}">Fans</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'news' ? 'active' : '' }}">
                         <a href="{{ route('news') }}">News</a>
                     </li>
-                    <li>
+                    <li class="{{ Route::current()->getname() == 'shop' ? 'active' : '' }}">
                         <a href="{{ route('shop') }}">Shop</a>
                     </li>
                 </ul>
@@ -62,5 +61,4 @@
         </div>
     </div>
 
-    Fine header
 </header>

@@ -1,1 +1,64 @@
-//
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/general';
+
+// HEADER
+.header-top {
+    background-color: $background-blue;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    height: 5rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            padding: .5rem 0;
+            img {
+                height: 4rem;
+            }
+        }
+        .menu {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                list-style: none;
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 5rem;
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: #555758;
+                    }
+                    &.active {
+                        border-bottom: 3px solid $background-blue;
+                        a {
+                            color: $background-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
