@@ -17,41 +17,41 @@
     <div class="header-bottom">
         <div class="container">
             <div class="logo">
-                <a href="#">
+                <a href="{{ route('home') }}">
                     <img src="./images/dc-logo.png" alt="Logo">
                 </a>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Characters</a>
+                        <a href="{{ route('characters') }}">Characters</a>
                     </li>
                     <li>
-                        <a href="#">Comics</a>
+                        <a href="{{ route('comics') }}">Comics</a>
                     </li>
                     <li>
-                        <a href="#">Movies</a>
+                        <a href="{{ route('movies') }}">Movies</a>
                     </li>
                     <li>
-                        <a href="#">TV</a>
+                        <a href="{{ route('tv') }}">TV</a>
                     </li>
                     <li>
-                        <a href="#">Games</a>
+                        <a href="{{ route('games') }}">Games</a>
                     </li>
                     <li>
-                        <a href="#">Collectibles</a>
+                        <a href="{{ route('collectibles') }}">Collectibles</a>
                     </li>
                     <li>
-                        <a href="#">Videos</a>
+                        <a href="{{ route('videos') }}">Videos</a>
                     </li>
                     <li>
-                        <a href="#">Fans</a>
+                        <a href="{{ route('fans') }}">Fans</a>
                     </li>
                     <li>
-                        <a href="#">News</a>
+                        <a href="{{ route('news') }}">News</a>
                     </li>
                     <li>
-                        <a href="#">Shop</a>
+                        <a href="{{ route('shop') }}">Shop</a>
                     </li>
                 </ul>
             </div>
