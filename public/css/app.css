@@ -20,7 +20,7 @@ html {
 .header-top ul {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
   list-style: none;
 }
