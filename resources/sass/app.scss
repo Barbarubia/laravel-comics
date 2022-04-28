@@ -61,6 +61,14 @@
                 }
             }
         }
+        .search {
+            border-bottom: 2px solid $background-blue;
+            input {
+                border: none;
+                text-align: right;
+                padding-bottom: 5px;
+            }
+        }
     }
 }
 

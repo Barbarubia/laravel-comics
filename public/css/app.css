@@ -72,6 +72,14 @@ html {
 .header-bottom .container .menu ul li.active a {
   color: #0282f9;
 }
+.header-bottom .container .search {
+  border-bottom: 2px solid #0282f9;
+}
+.header-bottom .container .search input {
+  border: none;
+  text-align: right;
+  padding-bottom: 5px;
+}
 
 .jumbotron {
   background-image: url(../images/jumbotron.jpg);
