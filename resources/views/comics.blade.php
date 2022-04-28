@@ -3,8 +3,8 @@
 @section('title', 'Comics')
 
 @section('content')
-    <h1>Comics</h1>
     <div class="container comics-container">
+        <h1 class="title">Current Series</h1>
         <div class="cards-container">
             @foreach ($comics as $comic)
                 <div class="comic-card">

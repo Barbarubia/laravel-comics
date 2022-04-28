@@ -76,7 +76,7 @@ html {
 .jumbotron {
   background-image: url(../images/jumbotron.jpg);
   background-size: cover;
-  height: 20rem;
+  height: 35rem;
 }
 
 main {
@@ -86,10 +86,20 @@ main {
 }
 
 .comics-container {
+  position: relative;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.comics-container .title {
+  position: absolute;
+  top: -5rem;
+  align-self: flex-start;
+  background-color: #0282f9;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
 }
 .comics-container .cards-container {
   width: 100%;
@@ -125,4 +135,5 @@ main {
   font-weight: 600;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
