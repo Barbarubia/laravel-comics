@@ -25,11 +25,11 @@
     <!-- Header uguale per tutte le routes del sito -->
     @include('partials.header')
 
-    <main>
     <!-- Sezione jumbotron -->
     @include('partials.jumbotron')
 
     <!-- Contenuto dinamico in base alla route in cui mi trovo-->
+    <main>
     @yield('content')
     </main>
 

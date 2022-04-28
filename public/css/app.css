@@ -6,6 +6,7 @@
 
 html {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .container {
@@ -79,14 +80,49 @@ html {
 }
 
 main {
+  padding: 3rem 0;
   background-color: #1c1c1c;
   color: white;
 }
 
-.cards-container {
+.comics-container {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comics-container .cards-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
-.cards-container .comic-card {
-  width: 16.6666666667%;
+.comics-container .cards-container .comic-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(16.6666666667% - 1rem);
+}
+.comics-container .cards-container .comic-card .serie-thumb {
+  width: 100%;
+  height: 168px;
+}
+.comics-container .cards-container .comic-card .serie-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comics-container .cards-container .comic-card .serie-title {
+  text-transform: uppercase;
+}
+.comics-container button {
+  border: none;
+  background-color: #0282f9;
+  padding: 0.5rem 3rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
 }

@@ -4,12 +4,17 @@
 
 @section('content')
     <h1>Comics</h1>
-    <div class="container cards-container">
-        @foreach ($comics as $comic)
-            <div class="comic-card">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-                <h3>{{ $comic['series'] }}</h3>
-            </div>
-        @endforeach
+    <div class="container comics-container">
+        <div class="cards-container">
+            @foreach ($comics as $comic)
+                <div class="comic-card">
+                    <div class="serie-thumb">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    </div>
+                    <span class="serie-title">{{ $comic['series'] }}</span>
+                </div>
+            @endforeach
+        </div>
+        <button>Load More</button>
     </div>
 @endsection
